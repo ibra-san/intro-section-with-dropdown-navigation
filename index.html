@@ -10,24 +10,37 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
-  
   <nav id="nav__bar">
     <div class="nav__bar--items" id="left__side">
       <img class="left__side--items" id="company__logo"  src="./images/logo.svg" alt="Snap company Logo">
 
-      <div class="drop__down" data-dropdown id="features__drop--down" >
-        <button class="left__side--btn left__side--items" data-dropdown-button id="features__btn" >
-          Features <img class="arrows__down" src="./images/icon-arrow-down.svg" alt="arrow down"> <img class="arrows__up" src="./images/icon-arrow-up.svg" alt="arrow up"> 
+      <div class="drop__down" id="features__drop--down" data-dropdown>
+        <button class="left__side--btn left__side--items" id="features__btn" data-dropdown-button>
+          Features <img class="arrows__down" src="./images/icon-arrow-down.svg" alt="arrow down" /> <img class="arrows__up" src="./images/icon-arrow-up.svg" alt="arrow up" /> 
         </button>
         <div class="drop__down--menu"  id="features__drop--menu">
-          Drop Down content
+          <div class="drop__down--menu--items" id="features__menu--items">
+            <img src="./images/icon-todo.svg" alt="todo list app logo"> <span class="items__name" id="todo__item--name">Todo List</span>
+          </div>
+          <div class="drop__down--menu--items" id="features__menu--items">
+            <img src="./images/icon-calendar.svg" alt="Calendar app logo"> <span class="items__name" id="calendar__item--name">Calendar</span>
+          </div>
+          <div class="drop__down--menu--items" id="features__menu--items">
+            <img src="./images/icon-reminders.svg" alt="Reminders app logo"> <span class="items__name" id="reminder__item--name">Reminders</span>
+          </div>
+          <div class="drop__down--menu--items" id="features__menu--items">
+            <img src="./images/icon-planning.svg" alt="Planning list app logo"> <span class="items__name" id="planning__item--name">Planning</span>
+          </div>
         </div>
       </div>
       
-      <div class="drop__down" id="company__drop--down">
+      <div class="drop__down" id="company__drop--down" data-dropdown>
         <button class="left__side--btn left__side--items" id="company__btn" data-dropdown-button>
           Company <img class="arrows__down" src="./images/icon-arrow-down.svg" alt="arrow down"> <img class="arrows__up" src="./images/icon-arrow-up.svg" alt="arrow up">
          </button>
+         <div class="drop__down--menu"  id="features__drop--menu">
+          Drop Down content
+        </div>
       </div>
       
       <div class="link__warp">
@@ -55,6 +68,6 @@
   </nav>
 
 
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
