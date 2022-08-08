@@ -42,7 +42,9 @@ body {
     
     
 }
-
+.menu__btn--open { 
+    display: none;
+}
 #nav__bar { 
    
     top: 2%;
@@ -52,20 +54,25 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: 2px solid red;
 }
 
 #left__side { 
     
     width: 40%;
-    
+    border: 2px solid blue;
     display: flex;
     justify-content: space-around;
 
     margin-left: 10px;
 }
 
-.left__side--items {
+#company__logo{ 
+    border: 2px solid purple;
+}
 
+.left__side--items {
+    border: 2px solid yellow;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -218,6 +225,12 @@ body {
 }
 
 
+@media screen and (max-width: 1100px) {
+    .menu__btn--open { 
+        display: block;
+    }
+}
+
 
 
 /* Editing the main content on the page*/ 
@@ -236,11 +249,11 @@ body {
 
 .main__img { 
     
-    height: 100vh;
-    width: 50vw;
+    width: 600px;
     justify-content: center;
     display: flex;
     align-items: center;
+    margin-right: 5%;
 }
 
 .main__img > img{ 
