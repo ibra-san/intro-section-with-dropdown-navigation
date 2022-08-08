@@ -53,26 +53,31 @@ body {
     height: 60px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    border: 2px solid red;
 }
 
 #left__side { 
     
-    width: 40%;
-    border: 2px solid blue;
+    width: 70%;
     display: flex;
-    justify-content: space-around;
-
+    gap: 5%;
+    padding-left: 3%;
+    height: 100%;
+    align-items: center;
     margin-left: 10px;
 }
 
+#right__side { 
+    display: flex;
+    height: 100%;
+    margin-top: 1%;
+    align-items: center;
+}
+
 #company__logo{ 
-    border: 2px solid purple;
+    margin-left: 3%;
 }
 
 .left__side--items {
-    border: 2px solid yellow;
     display: flex;
     align-items: center;
     gap: 5px;
@@ -97,7 +102,7 @@ body {
 
 .drop__down.active > .left__side--btn,
 .left__side--btn:hover { 
-    color: black;
+    color: hsl(0, 0%, 8%);
 }
 
 
@@ -199,6 +204,11 @@ body {
     display: flex;
     width: 70%;
     text-align: center;
+}
+
+.left__side--links:hover { 
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
 }
 #right__side { 
     
