@@ -50,6 +50,10 @@ body {
     display: none;
     
 }
+
+.menu__close--btn { 
+    display: none;
+}
 #nav__bar { 
    
     top: 2%;
@@ -87,9 +91,6 @@ body {
     
 }
 
-#nav__bar { 
-    
-}
 
 
 .left__side--items {
@@ -162,7 +163,6 @@ body {
 }
 #company__drop--menu{ 
     left: -20%;
-    
     width: 65px;
     padding: 2rem;
 }
@@ -209,13 +209,11 @@ body {
 }
 
 .drop__down--menu--items > img{ 
-   
     width: 15px;
     height: 15px;
 }
 
 .drop__down--menu--items > span{ 
-   
     display: flex;
     width: 70%;
     text-align: center;
@@ -226,13 +224,10 @@ body {
     color: hsl(0, 0%, 8%);
 }
 #right__side { 
-    
     width: 20%;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     margin-bottom: 15px;
 }
 
@@ -265,17 +260,12 @@ body {
 .content { 
     display: flex;
     flex-direction: row-reverse;
-
     justify-content: space-around;
     align-items: center;
-
     height: 100vh;
-
-    
 }
 
 .main__img { 
-    
     width: 600px;
     justify-content: center;
     display: flex;
@@ -299,7 +289,6 @@ body {
     margin-left: 20%;
     margin-bottom: 2%;
     margin-top: 10%;
-    
 }
 
 .main__text--title1 { 
@@ -349,4 +338,90 @@ body {
     .menu__btn--open { 
         display: block;
     }
+
+    .menu__close--btn { 
+        display: block;
+        width: 15px;
+        margin-left: 80%;
+        margin-bottom: 10%;
+        margin-top: 5%;
+    }
+
+    #nav__bar { 
+        flex-direction: column;
+        width: 200px;
+        height: 100vh;
+        top: 0%;
+        gap: 0%;
+        background-color: white;
+        right: 0%;
+        z-index: 2;
+    }
+
+    #left__side { 
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: left;
+        align-items: flex-start;
+        padding-left: 0;
+        margin: 0;
+        gap: 7%;
+        margin-left: 30%;
+        margin-bottom: 10%;
+        
+    }
+
+    .drop__down{ 
+        margin-bottom: 15%;
+    }
+
+    .drop__down--menu { 
+        background-color: white;
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+        padding-right: 0;
+        border-radius: 0;
+        box-shadow: none;
+        display: none;
+        pointer-events: none;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        margin-left: 20%;
+    }
+    #company__drop--menu{ 
+        left: 0;
+        width: 100%;
+        margin-left: 20%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+        padding: 0;
+
+    }
+    .drop__down.active > .drop__down--menu { 
+        display: flex;
+    }
+    .left__side--links { 
+        margin-bottom: 60%;
+    }
+    
+    
+    #right__side { 
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 15px;
+       
+    }
+    #register__btn{ 
+        width: 150px;
+    }
+
 }
