@@ -349,7 +349,7 @@ body {
 
     #nav__bar { 
         flex-direction: column;
-        width: 200px;
+        width: 50%;
         height: 100vh;
         top: 0%;
         gap: 0%;
@@ -397,6 +397,7 @@ body {
         margin-bottom: 10%;
         margin-left: 20%;
     }
+
     #company__drop--menu{ 
         left: 0;
         width: 100%;
@@ -422,8 +423,68 @@ body {
        
     }
     #register__btn{ 
-        width: 150px;
+        width: 130%;
+        margin-left: -10%;
+        
+        
     }
+
+    .content { 
+        border: 2px solid red;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .main__img { 
+        margin-right: 0%;
+        width: 100%;
+        border: 2px solid violet;
+        margin-top: 60px;
+    }
+
+    .main__img > img{
+        width: 100%;
+        border: 2px solid blue;
+    }
+    .main__text { 
+        border: 2px solid yellow;
+        height: auto;
+        gap: 0;
+    }
+
+    .main__text--title  { 
+        border: 2px solid green;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        margin-left: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .main__text--title1 { 
+        font-size: 30px;
+    }
+    .main__text--info{ 
+        border: 2px solid brown;
+        margin-left: 0;
+        width: 100%;
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .main__text--button { 
+        margin-left: 0; 
+        width: 30%;
+        padding: 3%;
+        border: none;
+    }
+    .main__text--clients{    
+        margin-left:0;
+        width: auto;
+    }
+        .main__text--clients > img { 
+        margin-right: 0;
+    }
+
 }
 
 .screen { 
