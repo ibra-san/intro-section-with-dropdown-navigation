@@ -22,3 +22,21 @@ document.addEventListener("click", e => {
     
     
 })
+
+
+const menuOpenButton = document.getElementById("menu__btn--open")
+const navMenu = document.getElementById("nav__bar");
+const screenDiv = document.getElementById("screen__div");
+const menuCloseButton = document.getElementById("menu__btn--close")
+
+menuOpenButton.addEventListener("click", () => { 
+    navMenu.style.right = "0";
+    screenDiv.style.opacity = "1";
+    screenDiv.style.width = "100vw";
+})
+
+menuCloseButton.addEventListener("click", ()=> { 
+    navMenu.style.right = "-50%";
+    screenDiv.style.opacity="0";
+    screenDiv.style.width="0vw"
+})
